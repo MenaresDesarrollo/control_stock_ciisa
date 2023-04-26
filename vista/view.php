@@ -13,7 +13,7 @@ var key = window.Event ? e.which : e.keyCode
 
 ----- INGRESE SUS DATOS ----- <br><br>
            
-<form id="formulario" action="home.php" method="POST" >
+<form id="formulario" action="controller/home.php" method="POST" >
 
 Nombre
 <input type="text" id="n" name="n"><br><br>
