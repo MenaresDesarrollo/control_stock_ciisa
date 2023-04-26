@@ -23,10 +23,7 @@
             alert(mensaje);
             return false;
         }
-        else{
-            alert("Usuario correcto!")
-        }
-        }
+    }
     </script>
 ----- Login----- <br><br>
            

@@ -7,5 +7,9 @@
     if($user == "admin" and $contrasena == "admin"){
         header ("Location: ../vista/view.php");
         die();
-    }
+    }if($user != "admin" or $contrasena != "admin"){
+        header("location: ../index.php");
+    };
+
+    
 ?>
