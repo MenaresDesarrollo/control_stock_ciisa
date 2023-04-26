@@ -29,7 +29,7 @@
            
     <form id="formulario" action="controlador/verUser.php" method="POST" >
            
-        Usuerio
+        Usuario
         <input type="text" id="user" name="user"><br><br>
             
         Contraseña
