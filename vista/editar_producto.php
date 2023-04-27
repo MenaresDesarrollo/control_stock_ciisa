@@ -8,10 +8,11 @@
         mensaje="";
         var id = document.getElementById("id").value;
         var producto = document.getElementById("prod").value;
-        var marca = document.getElementById("marca").value;
+        var categoria = document.getElementById("categoria").value;
         var cantidad = document.getElementById("cant").value;
+        var precio = document.getElementById("precio").value;
 
-        if (id=="" || producto=="" || marca=="" || cantidad=="") {
+        if (id=="" || producto=="" || cantidad=="" || categoria=="" || precio=="")  {
             mensaje=mensaje+"Producto no ingresado faltan datos \n";
         }
         if (mensaje!="") {
@@ -20,27 +21,44 @@
             return false;
         }
     }
-    </script>
+</script>
 
------ INGRESE SUS DATOS ----- <br><br>
-           
-<form id="formulario" action="../controlador/edPro.php" method="POST" >
+----- INGRESE DATOS A EDITAR ----- <br><br>
+<form id="formulario" action="../controlador/edPro.php" method="POST">
 
-Id
-<input type="number" id="id" name="id"><br><br>
+        código del producto:
+        <input type="number" id="id" name="id"><br><br>
 
-Prudcto
-<input type="text" id="prod" name="prod"><br><br>
+        Nombre del producto:
+        <input type="text" id="prod" name="prod"><br><br>
 
-Marca
-<input type="text" id="marca" name="marca" ><br><br>
+        Categoría:
+        <input type="text" id="categoria" name="categoria"><br><br>
 
-Cantidad
-<input type="number" id="cant" name="cant"><br><br>
+        Sucursal:
+        <select name="sucursal">
+            <option value="">Seleccione sucursal</option>
+            <option value="Independencia">Indepe</option>
+            <option value="Quilicura">Quilicumbia</option>
+            <option value="Huechuraba">wechuraa</option>
+        </select>
+        <br><br>
 
-<button type="submit">enviar</button>
+        Descripción:
+        <input type="text" name="descripcion">
+        <br><br>
+
+        Cantidad:
+        <input type="number" id="cant" name="cant"><br><br>
+
+        Precio:
+        <input type="number" id="precio" name="precio">
+        <br><br>
+
+
+        <button type="submit" onclick="return validar();">enviar</button>
 </form>
-
+           
 </body>
 
 </html>

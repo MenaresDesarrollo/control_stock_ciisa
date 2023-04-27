@@ -3,10 +3,10 @@
     $producto = $_POST['prod'];
     $categoria = $_POST['categoria'];
     $cantidad = $_POST['cant'];
-    $susucusal = $_POST["sucursal"];
+    $sucursal = $_POST["sucursal"];
     $descripcion = $_POST["descripcion"];
     $precio = $_POST["precio"];
-        ?>
+?>
 
 <!DOCTYPE html>
 <html lang="en">

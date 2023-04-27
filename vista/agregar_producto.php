@@ -5,6 +5,25 @@
 </head>
 
 <body>
+<script>
+    function validar(){
+        mensaje="";
+        var id = document.getElementById("id").value;
+        var producto = document.getElementById("prod").value;
+        var categoria = document.getElementById("categoria").value;
+        var cantidad = document.getElementById("cant").value;
+        var precio = document.getElementById("precio").value;
+
+        if (id=="" || producto=="" || cantidad=="" || categoria=="" || precio=="")  {
+            mensaje=mensaje+"Producto no ingresado faltan datos \n";
+        }
+        if (mensaje!="") {
+            mensaje="Datos faltantes en el formulario \n\n"+mensaje;
+            alert(mensaje);
+            return false;
+        }
+    }
+</script>
 
     ----- INGRESE SUS DATOS ----- <br><br>
 
@@ -22,9 +41,9 @@
         Sucursal:
         <select name="sucursal">
             <option value="">Seleccione sucursal</option>
-            <option value="Independencia">Indepe</option>
-            <option value="Quilicura">Quilicumbia</option>
-            <option value="Huechuraba">wechuraa</option>
+            <option value="Independencia">Independencia</option>
+            <option value="Quilicura">Quilicura</option>
+            <option value="Huechuraba">Huechuraba</option>
         </select>
         <br><br>
 
@@ -36,11 +55,11 @@
         <input type="number" id="cant" name="cant"><br><br>
 
         Precio:
-        <input type="number" name="precio">
+        <input type="number" id="precio" name="precio">
         <br><br>
 
 
-        <button type="submit">enviar</button>
+        <button type="submit" onclick="return validar();">enviar</button>
     </form>
 
 </body>
