@@ -1,9 +1,12 @@
 <?php
     $id = $_POST['id'];
     $producto = $_POST['prod'];
-    $marca = $_POST['marca'];
+    $categoria = $_POST['categoria'];
     $cantidad = $_POST['cant'];
-?>
+    $susucusal = $_POST["sucursal"];
+    $descripcion = $_POST["descripcion"];
+    $precio = $_POST["precio"];
+        ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -22,18 +25,24 @@
         <table class="table table table-sm mt-2">
             <thead>
                 <tr>
-                    <th scope="col">id</th>
-                    <th scope="col">producto</th>
-                    <th scope="col">marca</th>
-                    <th scope="col">cantidad</th>
+                    <th scope="col">Código del producto</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Categoría</th>
+                    <th scope="col">Sucursal</th>
+                    <th scope="col">Descripción</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Precio</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <th scope="row"><?php echo "$id" ?></th>
                     <td><?php echo "$producto" ?></td>
-                    <td><?php echo "$marca" ?></td>
+                    <td><?php echo "$categoria" ?></td>
+                    <td><?php echo "$sucursal" ?></td>
+                    <td><?php echo "$descripcion" ?></td>
                     <td><?php echo "$cantidad" ?></td>
+                    <td><?php echo "$precio"; ?></td>
                 </tr>
             </tbody>
         </table>
