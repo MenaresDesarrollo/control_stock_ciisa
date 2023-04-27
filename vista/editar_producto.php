@@ -56,7 +56,7 @@
         <br><br>
 
 
-        <button type="submit" onclick="return validar();">enviar</button>
+        <button type="submit" onclick="return validar();">Editar</button>
 </form>
            
 </body>

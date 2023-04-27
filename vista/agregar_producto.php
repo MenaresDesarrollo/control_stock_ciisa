@@ -59,7 +59,7 @@
         <br><br>
 
 
-        <button type="submit" onclick="return validar();">enviar</button>
+        <button type="submit" onclick="return validar();">Agregar</button>
     </form>
 
 </body>
